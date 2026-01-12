@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.about {
+  min-height: 90vh;
+  padding: 80px 8%;
+  background: #f9fafb; 
+  color: #0f172a; 
+}
+
+.about h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #0f172a;
+}
+
+.about-tagline {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280; 
+  margin-bottom: 60px;
+}
+
+.about-flex {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-content {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #334155; 
+}
+
+.about-content p {
+  margin-bottom: 18px;
+}
+
+.about-video {
+  width: 99%;
+}
+
+.about-video video {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.25); 
+}
+
+.brands-section {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.brands-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #020617;
+}
+
+.brand-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.brand {
+  background: #ffffff;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #334155;
+  border: 1px solid #e5e7eb;
+  transition: 0.3s ease;
+}
+
+.brand:hover {
+  background: #0f172a; 
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.store-link a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  position: relative;
+}
+
+.store-link a::after {
+  content: "";
+  width: 40%;
+  height: 2px;
+  background: #0f172a;
+  display: block;
+  margin: 6px auto 0;
+}
+
+@media (max-width: 900px) {
+  .about {
+    padding-top: 130px;
+  }
+
+  .about-flex {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-video video {
+    height: 260px;
+  }
+}
